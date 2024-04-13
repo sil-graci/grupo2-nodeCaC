@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.iniciarSesion:hover{
+    background-color: #15616D;
+    color: #FFECD1;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.contenedor-grid{
+        padding: 10px;
+        margin: 5px;
+        margin: 0;
+        padding: 0;
+}
+
+.encabezado{
+    grid-area: encabezado;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    background-color: #001524;
+    color: #FF7D00;
+}
+
+.logo{
+    width: 5vw;
+    height: 9vh;
+}
+
+.menu{
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    column-gap: 3%;
+    background-color: #15616D;
+    padding: 5px 0;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color:#FFECD1;
+    padding: 5px 10px;
+}
+
+.menu a:hover{
+    background-color: #001524;
+    color: #FF7D00;
+    border-radius: 10px;
+
+}
+
+
+.izquierda{
+    grid-area: izquierda;
+}
+
+.centro{
+    grid-area: centro;
+}
+
+.derecha{
+    grid-area: derecha;
+}
+
+.derecha, .centro, .izquierda{
+    text-align: center;
+}
+
+.derecha img, .centro img, .izquierda img{
+    width: 400px;
+    height: 280px;
+}
+.pie{
+    grid-area: pie;
+    background-color: #001524;
+    color: #FF7D00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.pie a i{
+    color: #FF7D00;
+    padding: 0 5px;
+
+   
+}
+
+.pie p{
+    margin-bottom: 5px;
+}
+
+/*--------------------------------------------------*/
+/*Estilo para productos*/
+/*--------------------------------------------------*/
+.grid-container {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px; 
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10px 15px 80px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/*--------------------------------------------------*/
+/*Estilo de la grilla para pantallas grandes*/
+/*--------------------------------------------------*/
+
+.contenedor-grid{
+    display: grid;
+    grid-template: auto auto auto auto / 0.5fr 1fr 0.5fr;
+    grid-template-areas: "encabezado encabezado encabezado" 
+                         "menu menu menu"
+                         "izquierda centro derecha"
+                         "pie pie pie";
+   
+}
+/*--------------------------------------------------*/
+/*Estilo de la grilla para pantallas de tablets*/
+/*--------------------------------------------------*/
+
+@media (max-width:992px){
+.contenedor-grid{
+    display: grid;
+    grid-template: auto auto auto auto auto / 0.5fr  0.5fr;
+    grid-template-areas: "encabezado encabezado " 
+                         "menu menu "                            
+                         "izquierda centro"
+                         "derecha  derecha"
+                         "pie pie ";
+                        }
+.grid-container {
+    grid-template-columns: repeat(3, 1fr); 
+                        }
+}
+                    
+
+
+/*--------------------------------------------------*/
+/*Estilo de la grilla para pantallas de celular*/
+/*--------------------------------------------------*/
+@media (max-width:560px){
+    .contenedor-grid{
+        display: grid;
+        grid-template: auto auto auto auto auto auto / 1fr;
+        grid-template-areas: "encabezado" 
+                             "menu"                     
+                             "izquierda "
+                             "centro "
+                             "derecha"
+                             "pie";
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); 
+
+    }
+}
