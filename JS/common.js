@@ -12,7 +12,7 @@ let cad = `
 <a href="../index.html">Inicio</a>
 <a href="acercaDe.html">Acerca de</a>
 <a href="contacto.html">Contacto</a>
-<a href="registrarse.html">Registrarse</a>
+
 <a href="##" title="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
 </nav>
 
