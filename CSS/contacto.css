@@ -1,0 +1,76 @@
+p{
+    /* text-align: center; */
+    margin: 15px 30px ;
+    font-size: 20px;
+    font-weight: 600;
+    /* border: solid 4px #15616D; */
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+
+}
+.datos-contacto{
+    grid-area: contacto;
+    /* border: solid 2px #15616D; */
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.datos-contacto h2{
+    text-align: center;
+}
+.form-contacto{
+    grid-area: form-contacto;
+
+}
+
+
+.mapa{
+grid-area: mapa;
+
+}
+
+
+.mapa iframe{
+    width:800px;
+    height:300px;
+    margin: 50px 0px 80px;
+    border: solid 4px #15616D;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    
+}
+
+.datos-contacto ul li a, .mail{
+    text-decoration: none;
+    color: #78290F;
+}
+/*--------------------------------------------------*/
+/*Estilo de la grilla para pantallas grandes*/
+/*--------------------------------------------------*/
+.contenedor-contacto{
+    display: grid;
+    place-items: center;
+    max-width: 1200px;
+    grid-template: auto auto  / 0.5fr 0.5fr;
+    grid-template-areas: "contacto form-contacto" 
+                         "mapa mapa";
+                       
+   
+}
+
+
+@media(max-width: 768px) {
+    .contenedor-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
