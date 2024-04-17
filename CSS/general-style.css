@@ -1,11 +1,17 @@
-body{
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 
-
 }
 
-.iniciarSesion:hover{
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    
+}
+
+.carrito:hover{
     background-color: #15616D;
     color: #FFECD1;
     padding: 5px 10px;
@@ -29,6 +35,14 @@ body{
     color: #FF7D00;
 }
 
+.carrito{
+    margin-right: 30px;
+    
+}
+
+.carrito a{
+    color: #FF7D00;
+}
 .logo{
     width: 5vw;
     height: 9vh;
@@ -60,6 +74,7 @@ body{
 
 .izquierda{
     grid-area: izquierda;
+    margin-left: 15px;
 }
 
 .centro{
@@ -68,15 +83,21 @@ body{
 
 .derecha{
     grid-area: derecha;
+    margin-right: 15px;
 }
 
 .derecha, .centro, .izquierda{
     text-align: center;
+    margin-top: 30px;
+
+   
 }
 
 .derecha img, .centro img, .izquierda img{
-    width: 400px;
+    width: 90%;
     height: 280px;
+    border-radius: 10px;
+
 }
 .pie{
     grid-area: pie;
@@ -125,7 +146,7 @@ body{
 
 .contenedor-grid{
     display: grid;
-    grid-template: auto auto auto auto / 0.5fr 1fr 0.5fr;
+    grid-template: auto auto auto auto / 1fr 1fr 1fr;
     grid-template-areas: "encabezado encabezado encabezado" 
                          "menu menu menu"
                          "izquierda centro derecha"
@@ -150,16 +171,45 @@ body{
     grid-template-columns: repeat(3, 1fr); 
                         }
 
+.derecha img{
+    width: 50%;
+}
+
 .logo{
     width: 6vw;
     height: 7vh;
                         }
 }
                     
+/*--------------------------------------------------*/
+/* Estilo de la grilla para pantallas de celular */
+/*--------------------------------------------------*/
+@media (max-width: 860px) {
+    .contenedor-grid {
+      display: grid;
+      grid-template: auto auto auto auto auto auto / 1fr;
+      grid-template-areas: "encabezado"
+                           "menu"
+                           "izquierda"
+                           "centro"
+                           "derecha"
+                           "pie";
+    }
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
+    .derecha img{
+        width: 90%;
+    }
+    .logo {
+      width: 6vw;
+      height: 6vh;
+    }
+  }
 
 /*--------------------------------------------------*/
-/*Estilo de la grilla para pantallas de celular*/
+/*Estilo de la grilla para pantallas más pequeñas*/
 /*--------------------------------------------------*/
 @media (max-width:560px){
     .contenedor-grid{

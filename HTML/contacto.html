@@ -25,20 +25,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header id="idheader"></header>
-    <p class="intro">
-      ¡Nos encantaría saber de ti! Si tienes alguna pregunta, comentario o
-      simplemente quieres charlar sobre nuestros productos, no dudes en
-      contactarnos. Puedes comunicarte con nosotros por teléfono, correo
-      electrónico o completando el formulario de contacto.
-    </p>
+
     <div class="contenedor-contacto">
       <div class="datos-contacto">
+        <p class="intro animate__animated animate__backInDown">
+          ¡Nos encantaría saber de ti! Si tienes alguna pregunta, comentario o
+          simplemente quieres charlar sobre nuestros productos, no dudes en
+          contactarnos. Puedes comunicarte con nosotros por teléfono, correo
+          electrónico o completando el formulario de contacto.
+        </p>
         <h3>Datos de contacto</h3>
         <ul>
           <li>
@@ -63,17 +69,126 @@
 
       <div class="form-contacto">
         <h3>Realizá tus consultas</h3>
-        <form action="#" method="post">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
 
-          <label for="correo">Correo electrónico:</label>
-          <input type="email" id="correo" name="correo" required />
+        <form action="" class="formulario" id="formulario">
+          <!-- Grupo: Nombre -->
+          <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombre</label>
+            <div class="formulario__grupo-input">
+              <input
+                type="text"
+                class="formulario__input"
+                name="nombre"
+                id="nombre"
+                placeholder="Juan Perez"
+              />
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+              Completar nombre y apellido. Solo
+              letras, espacios y tildes hasta 20 caracteres.
+            </p>
+          </div>
 
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
+          <!-- Grupo: Correo Electronico -->
+          <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label"
+              >Correo Electrónico</label
+            >
+            <div class="formulario__grupo-input">
+              <input
+                type="email"
+                class="formulario__input"
+                name="correo"
+                id="correo"
+                placeholder="correo@correo.com"
+              />
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+              El correo solo puede contener letras, numeros, puntos, guiones y
+              guion bajo.
+            </p>
+          </div>
 
-          <button type="submit">Enviar mensaje</button>
+          <!-- Grupo teléfono -->
+          <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Teléfono :</label>
+            <div class="formulario__grupo-input">
+              <input
+                type="text"
+                class="formulario__input"
+                name="telefono"
+                id="telefono"
+                placeholder="1122334455"
+              />
+              <i
+                class="formulario__validacion-estado fa-solid fa-circle-xmark"
+              ></i>
+            </div>
+            <p class="formulario__input-error">
+              El teléfono solo puede contener números
+            </p>
+          </div>
+
+          <!-- Grupo: Tipo de consulta -->
+          <div class="formulario__grupo">
+            <label class="formulario__label" for="tipo-consulta"
+              >Tipo de consulta:</label
+            >
+            <select
+              class="formulario__select"
+              id="tipo-consulta"
+              name="tipoConsulta"
+              required
+            >
+              <option value="">Selecciona una opción</option>
+              <option value="productos">Productos</option>
+              <option value="servicios">Servicios</option>
+              <option value="otro">Otro</option>
+            </select>
+
+          </div>
+
+          <!-- Grupo consulta -->
+          <div class="formulario__grupo" id="grupo__consulta">
+            <label class="formulario__label" for="consulta">Consulta :</label>
+            <textarea
+              class="formulario__input"
+              name="consulta"
+              id="consulta"
+              rows="4"
+              placeholder="Ingresa tu consulta"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Grupo: términos y condiciones -->
+          <div class="formulario__grupo" id="grupo__terminos">
+            <label class="formulario__label">
+              <input
+                class="formulario__checkbox"
+                type="checkbox"
+                name="terminos"
+                id="terminos"
+              />
+              Acepto los Terminos y Condiciones
+            </label>
+          </div>
+
+          <div class="formulario__mensaje" id="formulario__mensaje">
+            <p>
+              <i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por
+              favor rellene todos los campos y de manera correcta.
+            </p>
+          </div>
+
+          <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+              Formulario enviado exitosamente!
+            </p>
+          </div>
         </form>
       </div>
 
@@ -95,5 +210,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../JS/common.js"></script>
+    <script src="../JS/formulario.js"></script>
+
   </body>
 </html>

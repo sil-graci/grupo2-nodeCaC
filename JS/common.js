@@ -6,14 +6,14 @@ let cad = `
 
 <img src="../IMAGENES/logo-pets.png" alt="" class="logo" />
 <h1 class="titulo">PETWHOLE</h1>
-<div class="iniciarSesion">Iniciar sesión</div>
+<div class="carrito"><a href="##" title="carrito"><i class="fa-solid fa-cart-shopping"></i></a></div>
 </header>
 <nav class="menu">
 <a href="../index.html">Inicio</a>
 <a href="acercaDe.html">Acerca de</a>
 <a href="contacto.html">Contacto</a>
 
-<a href="##" title="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+
 </nav>
 
 `
