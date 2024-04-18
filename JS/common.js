@@ -16,7 +16,7 @@ let cad = `
 
 </nav>
 
-`
+`;
 document.getElementById("idheader").innerHTML = cad;
 
 

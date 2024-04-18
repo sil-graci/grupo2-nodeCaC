@@ -7,14 +7,14 @@ const expresiones = {
 	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
 
     
-}
+};
 
 const campos = {
 	nombre: false,
 	correo: false,
 	telefono: false,
 
-}
+};
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
@@ -29,7 +29,7 @@ const validarFormulario = (e) => {
 		break;
 
 	}
-}
+};
 
 const validarCampo = (expresion, input, campo) => {
 	if(expresion.test(input.value)){
@@ -47,7 +47,7 @@ const validarCampo = (expresion, input, campo) => {
 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
 		campos[campo] = false;
 	}
-}
+};
 
 
 inputs.forEach((input) => {

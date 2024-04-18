@@ -1,233 +1,249 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
-.carrito:hover{
-    background-color: #15616D;
-    color: #FFECD1;
-    padding: 5px 10px;
-    border-radius: 10px;
+.carrito:hover {
+  background-color: #15616d;
+  color: #ffecd1;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
-.contenedor-grid{
-        padding: 10px;
-        margin: 5px;
-        margin: 0;
-        padding: 0;
+.contenedor-grid {
+  padding: 10px;
+  margin: 5px;
+  margin: 0;
+  padding: 0;
 }
 
-.encabezado{
-    grid-area: encabezado;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    align-items: center;
-    background-color: #001524;
-    color: #FF7D00;
+.encabezado {
+  grid-area: encabezado;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  background-color: #001524;
+  color: #ff7d00;
 }
 
-.carrito{
-    margin-right: 30px;
-    
+.carrito {
+  margin-right: 30px;
 }
 
-.carrito a{
-    color: #FF7D00;
+.carrito a {
+  color: #ff7d00;
 }
-.logo{
-    width: 5vw;
-    height: 9vh;
-}
-
-.menu{
-    grid-area: menu;
-    display: flex;
-    justify-content: center;
-    column-gap: 3%;
-    background-color: #15616D;
-    padding: 5px 0;
-
+.logo {
+  width: 5vw;
+  height: 9vh;
 }
 
-.menu a{
-    text-decoration: none;
-    color:#FFECD1;
-    padding: 5px 10px;
+.menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  column-gap: 3%;
+  background-color: #15616d;
+  padding: 5px 0;
 }
 
-.menu a:hover{
-    background-color: #001524;
-    color: #FF7D00;
-    border-radius: 10px;
-
+.menu a {
+  text-decoration: none;
+  color: #ffecd1;
+  padding: 5px 10px;
 }
 
-
-.izquierda{
-    grid-area: izquierda;
-    margin-left: 15px;
+.menu a:hover {
+  background-color: #001524;
+  color: #ff7d00;
+  border-radius: 10px;
 }
 
-.centro{
-    grid-area: centro;
+.izquierda {
+  grid-area: izquierda;
+  margin-left: 15px;
 }
 
-.derecha{
-    grid-area: derecha;
-    margin-right: 15px;
+.centro {
+  grid-area: centro;
 }
 
-.derecha, .centro, .izquierda{
-    text-align: center;
-    margin-top: 30px;
-
-   
+.derecha {
+  grid-area: derecha;
+  margin-right: 15px;
 }
 
-.derecha img, .centro img, .izquierda img{
-    width: 90%;
-    height: 280px;
-    border-radius: 10px;
-
-}
-.pie{
-    grid-area: pie;
-    background-color: #001524;
-    color: #FF7D00;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    padding: 0 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
+.derecha,
+.centro,
+.izquierda {
+  text-align: center;
+  margin-top: 30px;
 }
 
-.pie a i{
-    color: #FF7D00;
-    padding: 0 5px;
-
-   
+.derecha img,
+.centro img,
+.izquierda img {
+  width: 90%;
+  height: 280px;
+  border-radius: 10px;
+}
+.pie {
+  grid-area: pie;
+  background-color: #001524;
+  color: #ff7d00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.pie p{
-    margin-bottom: 5px;
+.pie a i {
+  color: #ff7d00;
+  padding: 0 5px;
+}
+
+.pie p {
+  margin-bottom: 5px;
 }
 
 /*--------------------------------------------------*/
 /*Estilo para productos*/
 /*--------------------------------------------------*/
 .grid-container {
-    display: grid;
-    grid-auto-flow: row;
-    gap: 20px; 
-    grid-template-columns: repeat(5, 1fr);
-    margin: 10px 15px 80px;
-    justify-content: center;
-    text-align: center;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px 15px 80px;
+  justify-content: center;
+  text-align: center;
 }
 
+.producto {
+  background-color: #ffecd1;
+  padding: 20px 0px;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
 
+.producto p{
+    font-size: 16px;
+    font-weight: bold;
+}
 
+.agregar {
+  border-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #15616d;
+  color: #ffecd1;
+}
+
+.agregar:hover{
+    background-color: #001524;
+    color: #ff7d00;
+    font-weight: bolder;
+}
 /*--------------------------------------------------*/
 /*Estilo de la grilla para pantallas grandes*/
 /*--------------------------------------------------*/
 
-.contenedor-grid{
-    display: grid;
-    grid-template: auto auto auto auto / 1fr 1fr 1fr;
-    grid-template-areas: "encabezado encabezado encabezado" 
-                         "menu menu menu"
-                         "izquierda centro derecha"
-                         "pie pie pie";
-   
+.contenedor-grid {
+  display: grid;
+  grid-template: auto auto auto auto / 1fr 1fr 1fr;
+  grid-template-areas:
+    "encabezado encabezado encabezado"
+    "menu menu menu"
+    "izquierda centro derecha"
+    "pie pie pie";
 }
 /*--------------------------------------------------*/
 /*Estilo de la grilla para pantallas de tablets*/
 /*--------------------------------------------------*/
 
-@media (max-width:992px){
-.contenedor-grid{
+@media (max-width: 992px) {
+  .contenedor-grid {
     display: grid;
-    grid-template: auto auto auto auto auto / 0.5fr  0.5fr;
-    grid-template-areas: "encabezado encabezado " 
-                         "menu menu "                            
-                         "izquierda centro"
-                         "derecha  derecha"
-                         "pie pie ";
-                        }
-.grid-container {
-    grid-template-columns: repeat(3, 1fr); 
-                        }
+    grid-template: auto auto auto auto auto / 0.5fr 0.5fr;
+    grid-template-areas:
+      "encabezado encabezado "
+      "menu menu "
+      "izquierda centro"
+      "derecha  derecha"
+      "pie pie ";
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.derecha img{
+  .derecha img {
     width: 50%;
-}
+  }
 
-.logo{
+  .logo {
     width: 6vw;
     height: 7vh;
-                        }
+  }
 }
-                    
+
 /*--------------------------------------------------*/
 /* Estilo de la grilla para pantallas de celular */
 /*--------------------------------------------------*/
 @media (max-width: 860px) {
-    .contenedor-grid {
-      display: grid;
-      grid-template: auto auto auto auto auto auto / 1fr;
-      grid-template-areas: "encabezado"
-                           "menu"
-                           "izquierda"
-                           "centro"
-                           "derecha"
-                           "pie";
-    }
-    .grid-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    .derecha img{
-        width: 90%;
-    }
-    .logo {
-      width: 6vw;
-      height: 6vh;
-    }
+  .contenedor-grid {
+    display: grid;
+    grid-template: auto auto auto auto auto auto / 1fr;
+    grid-template-areas:
+      "encabezado"
+      "menu"
+      "izquierda"
+      "centro"
+      "derecha"
+      "pie";
   }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .derecha img {
+    width: 90%;
+  }
+  .logo {
+    width: 6vw;
+    height: 6vh;
+  }
+}
 
 /*--------------------------------------------------*/
 /*Estilo de la grilla para pantallas más pequeñas*/
 /*--------------------------------------------------*/
-@media (max-width:560px){
-    .contenedor-grid{
-        display: grid;
-        grid-template: auto auto auto auto auto auto / 1fr;
-        grid-template-areas: "encabezado" 
-                             "menu"                     
-                             "izquierda "
-                             "centro "
-                             "derecha"
-                             "pie";
-    }
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr); 
-
-    }
-    .logo{
-        width: 6vw;
-        height: 6vh;
-    }
+@media (max-width: 560px) {
+  .contenedor-grid {
+    display: grid;
+    grid-template: auto auto auto auto auto auto / 1fr;
+    grid-template-areas:
+      "encabezado"
+      "menu"
+      "izquierda "
+      "centro "
+      "derecha"
+      "pie";
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .logo {
+    width: 6vw;
+    height: 6vh;
+  }
 }
