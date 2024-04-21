@@ -19,9 +19,8 @@ let cad = `
 `;
 document.getElementById("idheader").innerHTML = cad;
 
-
 //FOOTER
-let cad2=`
+let cad2 = `
 <footer class="pie" >
 <div class="iconos">
 <a href="https://www.facebook.com/" target="_blank" rel="noopener"
@@ -46,3 +45,36 @@ let cad2=`
 `;
 document.getElementById("idfooter").innerHTML = cad2;
 
+/*--------------------------------------------------*/
+/*PRODUCTOS PARA PÁG ALIMENTOS*/
+/*--------------------------------------------------*/
+if (document.getElementById("idalimentos")) {
+  var cad3 = `
+    <div id="contenedor-productos" class="grid-container">
+    `;
+
+  for (var i = 0; i < data.length; i++) {
+    cad3 += `
+  <div class="card producto">
+  <div class="card-body">
+  <h3 class="card-title">${data[i].nombre}</h3>
+  <img src="${data[i].imagen}" alt="${data[i].alt}" >
+  <p class="card-text">
+    Precio: ${data[i].precio}
+  </p>  
+    <a href="#" class="btn btn-card">Agregar al carrito</a>
+    <div class="descripcion">
+      <p>${data[i].descripcion}</p>
+    </div>
+  </div>
+</div>
+
+`;
+  }
+
+  cad3 += `
+</div>
+`;
+
+  document.getElementById("idalimentos").innerHTML = cad3;
+}
