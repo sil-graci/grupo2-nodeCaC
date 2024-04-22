@@ -233,6 +233,7 @@ grid-area: mapa;
 .contenedor-contacto{
     display: grid;
     place-items: center;
+	margin: 0 auto;
 	max-width: 1200px;
     grid-template: auto auto / 0.75fr 1fr;
     grid-template-areas: "contacto form-contacto" 
