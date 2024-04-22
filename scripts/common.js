@@ -4,7 +4,9 @@ let cad = `
 <div class="contenedor-grid">
 <header class="encabezado" >
 
-<img src="../images/logo-pets.png" alt="" class="logo" />
+<a href="../index.html">
+  <img src="../images/logo-pets.png" alt="" class="logo">
+</a>
 <h1 class="titulo">PETWHOLE</h1>
 <div class="carrito"><a href="##" title="carrito"><i class="fa-solid fa-cart-shopping"></i></a></div>
 </header>

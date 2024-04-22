@@ -9,6 +9,15 @@ body {
   font-weight: 600;
 }
 
+.carrito {
+  margin-right: 30px;
+  padding: 5px 10px;
+}
+
+.carrito a {
+  color: #ff7d00;
+}
+
 .carrito:hover {
   background-color: #15616d;
   color: #ffecd1;
@@ -30,14 +39,6 @@ body {
   padding: 0 20px;
   align-items: center;
   background-color: #001524;
-  color: #ff7d00;
-}
-
-.carrito {
-  margin-right: 30px;
-}
-
-.carrito a {
   color: #ff7d00;
 }
 .logo {
