@@ -1,7 +1,7 @@
 var data=[
     {
         codigo:"cod1",
-        imagen:"../images/alimento1.png",
+        imagen:"../imagenes/alimento1.png",
         alt:"Galleta_perro",
         nombre:"CroquiBones",
         descripcion:"Deliciosas galletas nutritivas, perfectas para mantener a tu perro feliz y saludable.",
@@ -9,7 +9,7 @@ var data=[
     },
     {
         codigo:"cod2",
-        imagen:"../images/alimento2.png",
+        imagen:"../imagenes/alimento2.png",
         alt:"Galleta_perro",
         nombre:"CroquiGreen",
         descripcion:"Exquisitas galletas repletas de nutrientes y vegetales frescos para mantener a tu perro fuerte y saludable.",
@@ -18,7 +18,7 @@ var data=[
 
     {
         codigo:"cod3",
-        imagen:"../images/alimento3.png",
+        imagen:"../imagenes/alimento3.png",
         alt:"Nutriente-gato",
         nombre:"Jasmine Rice",
         descripcion:"Fórmula enriquecida con vitaminas y minerales que promueven la salud y el bienestar de tu gato.",
@@ -27,7 +27,7 @@ var data=[
 
     {
         codigo:"cod4",
-        imagen:"../images/alimento4.png",
+        imagen:"../imagenes/alimento4.png",
         alt:"Mezcla-gatos",
         nombre:"Fresh Kisses",
         descripcion:"Mezcla perfecta de texturas y sabores que mantendrán a tu gato saludable.",
@@ -36,7 +36,7 @@ var data=[
 
     {
         codigo:"cod5",
-        imagen:"../images/alimento5.png",
+        imagen:"../imagenes/alimento5.png",
         alt:"Bocaditos-gatos",
         nombre:"Moist Meals",
         descripcion:"Deliciosos bocados con sabor a atún que satisfacen el paladar exigente de tu gato.",
@@ -45,7 +45,7 @@ var data=[
 
     {
         codigo:"cod6",
-        imagen:"../images/alimento6.png",
+        imagen:"../imagenes/alimento6.png",
         nombre:"Bark Bites",
         alt:"Golosina_perro",
         descripcion:"Pequeñas golosinas crujientes; un bocadito delicioso para tu perro.",
@@ -54,7 +54,7 @@ var data=[
 
     {
         codigo:"cod7",
-        imagen:"../images/alimento7.png",
+        imagen:"../imagenes/alimento7.png",
         alt:"Mezcla_peces",
         nombre:"Aquatic feed",
         descripcion:"Una mezcla gourmet de ingredientes seleccionados para satisfacer los gustos refinados de tu pez.",
@@ -63,7 +63,7 @@ var data=[
 
     {
         codigo:"cod8",
-        imagen:"../images/alimento8.png",
+        imagen:"../imagenes/alimento8.png",
         alt:"Alimento_aves",
         nombre:"Early Bird",
         descripcion:"Alimento balanceado que cuida las plumas y la salud general de tu ave",
