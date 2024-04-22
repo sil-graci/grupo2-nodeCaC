@@ -10,9 +10,9 @@ var data=[
     {
         codigo:"cod2",
         imagen:"../imagenes/alimento2.png",
-        alt:"Balanceado_hamster",
-        nombre:"Happy Hamster",
-        descripcion:"Balanceado que no solo es delicioso, sino que también promueve la salud y la vitalidad de tu hámster.",
+        alt:"Galleta_perro",
+        nombre:"CroquiGreen",
+        descripcion:"Exquisitas galletas repletas de nutrientes y vegetales frescos para mantener a tu perro fuerte y saludable.",
         precio:"$4100"
     },
 

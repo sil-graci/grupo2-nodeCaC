@@ -19,9 +19,8 @@ let cad = `
 `;
 document.getElementById("idheader").innerHTML = cad;
 
-
 //FOOTER
-let cad2=`
+let cad2 = `
 <footer class="pie" >
 <div class="iconos">
 <a href="https://www.facebook.com/" target="_blank" rel="noopener"

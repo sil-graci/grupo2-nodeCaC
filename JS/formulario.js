@@ -75,10 +75,13 @@ formulario.addEventListener('submit', (e) => {
         if (mensajeError) {
             setTimeout(() => {
                 mensajeError.remove();
-            }, 1000); 
+            }, 800); 
         }
  
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
+
+	
+
