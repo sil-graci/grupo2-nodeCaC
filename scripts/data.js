@@ -10,9 +10,9 @@ var data=[
     {
         codigo:"cod2",
         imagen:"../images/alimento2.png",
-        alt:"Galleta_perro",
-        nombre:"CroquiGreen",
-        descripcion:"Exquisitas galletas repletas de nutrientes y vegetales frescos para mantener a tu perro fuerte y saludable.",
+        alt:"Hamster-alimento",
+        nombre:"Happy Hamster",
+        descripcion:"Exquisito alimento repleto de nutrientes a tu hamster fuerte y saludable.",
         precio:"$4100"
     },
 
