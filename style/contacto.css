@@ -6,8 +6,7 @@
 
 body{
     font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    
+    font-weight: 600;    
 }
 
 .intro{
@@ -16,9 +15,8 @@ body{
     font-weight: 600;
     padding: 10px;
     border-radius: 20px;
-    
-
 }
+
 .datos-contacto{
     grid-area: contacto;
     padding: 10px;
@@ -48,9 +46,7 @@ body{
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
    
-
 }
-
 
 .mapa{
 grid-area: mapa;
@@ -75,20 +71,22 @@ grid-area: mapa;
 }
 
 /*--------------------------------------------------*/
-/*Estilo para formulario contactocheck hasta donde dice fin Estilo para formulario contacto*/ 
+/*Estilo para formulario contacto*/ 
 /*--------------------------------------------------*/
+
 .container-form {
 	max-width: 800px;
 	width: 90%;
 	margin: auto;
 	padding: 40px;
-    
+
 }
 
 .formulario {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
+	
 }
 
 .formulario__label {
@@ -98,8 +96,11 @@ grid-area: mapa;
 	cursor: pointer;
 }
 
+
+
 .formulario__grupo-input {
 	position: relative;
+	
 }
 
 #consulta{
@@ -113,7 +114,7 @@ grid-area: mapa;
 	border-radius: 3px;
 	height: 45px;
 	line-height: 45px;
-	padding: 0 40px 0 10px;
+	padding: 0 20px 0 10px;
 	transition: .3s ease all;
 }
 
@@ -160,6 +161,7 @@ grid-area: mapa;
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
+	margin-bottom: 10px;
 }
 
 .formulario__mensaje-activo {
@@ -168,6 +170,7 @@ grid-area: mapa;
 
 .formulario__mensaje p {
 	margin: 0;
+	font-size: 90%;
 }
 
 .formulario__grupo-btn-enviar {
@@ -224,7 +227,27 @@ grid-area: mapa;
 }
 
 
-/* ----- -----  Estilo distintas pantallas----- ----- */
+/*--------------------------------------------------*/
+/*Estilo de la grilla para pantallas grandes*/
+/*--------------------------------------------------*/
+.contenedor-contacto{
+    display: grid;
+    place-items: center;
+	max-width: 1200px;
+    grid-template: auto auto / 0.75fr 1fr;
+    grid-template-areas: "contacto form-contacto" 
+                         "mapa mapa";
+                       
+   
+}
+
+@media(max-width: 548px) { 
+	.formulario__mensaje p{
+		font-size: 80%;
+	}
+
+} 
+
 @media  (max-width: 800px) {
 	.formulario {
 		grid-template-columns: 1fr;
@@ -242,32 +265,25 @@ grid-area: mapa;
 	}
 }
 
-/*--------------------------------------------------*/
-/* fin Estilo para formulario contacto*/ 
-/*--------------------------------------------------*/
-
-/*--------------------------------------------------*/
-/*Estilo de la grilla para pantallas grandes*/
-/*--------------------------------------------------*/
-.contenedor-contacto{
-    display: grid;
-    place-items: center;
-    grid-template: auto auto / 1fr 1fr;
-    grid-template-areas: "contacto form-contacto" 
-                         "mapa mapa";
-                       
-   
-}
-
-
-@media(max-width: 768px) {
+@media (max-width: 950px) { 	
     .contenedor-contacto {
         display: flex;
         flex-direction: column;
         align-items: center;
+		
     }
+
     .mapa iframe{
         width:80vw;
         height:250px;
     }
+}
+
+
+@media (max-width:1056px){
+	.form-contacto, .datos-contacto{
+		padding:10px ;
+	}
+
+
 }

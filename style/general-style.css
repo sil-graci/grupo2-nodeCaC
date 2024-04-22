@@ -120,40 +120,68 @@ body {
 /*--------------------------------------------------*/
 /*Estilo para productos*/
 /*--------------------------------------------------*/
+
 .grid-container {
   display: grid;
-  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 10px 15px 80px;
-  justify-content: center;
-  text-align: center;
+  margin: 10px 30px 80px;
+  justify-content: center; 
 }
+
 
 .producto {
-  background-color: #ffecd1;
-  padding: 20px 0px;
+  background-color: rgb(255, 236, 209);
+  /* padding: 20px 0px; */
   box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+  margin: auto; 
+  text-align: center;
+  width: 15rem; 
+   /* height: 100%; */
+  
 }
 
-.producto p{
-    font-size: 16px;
-    font-weight: bold;
+.producto img{
+  width: 200px; 
+  height: 300px; 
+  object-fit: cover;
 }
 
-.agregar {
+.btn-card {
   border-style: none;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 5px 8px;
+  border-radius: 8px;
   background-color: #15616d;
   color: #ffecd1;
+  
 }
 
-.agregar:hover{
+.btn-card:hover{
     background-color: #001524;
     color: #ff7d00;
-    font-weight: bolder;
+
 }
+
+.descripcion {
+  display: none;
+  background-color: rgba(255, 236, 209, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 90%; 
+  max-width: 400px;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.producto:hover .descripcion {
+  display: block;
+}
+
+
+
 /*--------------------------------------------------*/
 /*Estilo de la grilla para pantallas grandes*/
 /*--------------------------------------------------*/
@@ -182,10 +210,11 @@ body {
       "derecha  derecha"
       "pie pie ";
   }
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
+    .grid-container {
+      grid-template-columns: repeat(2, minmax(250px, 1fr)); 
+    }
+  
   .derecha img {
     width: 50%;
   }
@@ -211,8 +240,11 @@ body {
       "derecha"
       "pie";
   }
+
+ 
   .grid-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, minmax(250px, 1fr)); 
+    justify-content: center;
   }
 
   .derecha img {
@@ -221,6 +253,12 @@ body {
   .logo {
     width: 6vw;
     height: 6vh;
+  }
+}
+
+@media (max-width: 646px){
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -239,9 +277,8 @@ body {
       "derecha"
       "pie";
   }
-  .grid-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
+
+
   .logo {
     width: 6vw;
     height: 6vh;
