@@ -172,16 +172,32 @@ border-radius: 10px;
 /*--------------------------------------------------*/
 /*Estilo de la grilla para pantallas de tablets*/
 /*--------------------------------------------------*/
+@media (max-width:768px){
+  .centro{
+    margin-top: 15px;
+  }
+}
 
+/*--------------------------------------------------*/
+/*Estilo de la grilla para pantallas grandes*/
+/*--------------------------------------------------*/
 @media (max-width: 992px) {
-
   .logo {
     width: 6vw;
     height: 7vh;
   }
-
 }
 
+/*--------------------------------------------------*/
+/*Estilo de la grilla para PC*/
+/*--------------------------------------------------*/
+@media (max-width: 1142px){
+  #central{
+    margin-bottom: 70px;
+  }
 
-
+  .derecha{
+    margin-top: 15px;
+  }
+}
 
